@@ -1,0 +1,16 @@
+@import 'compass/reset';
+@import 'compass/css3';
+
+.font-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    letter-spacing: 0.05em;
+}
+
+.font-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+}

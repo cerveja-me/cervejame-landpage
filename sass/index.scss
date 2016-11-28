@@ -1,0 +1,142 @@
+@import '_mixins';
+
+.bkg {
+    background-image: url(../img/bkg.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    text-align: center;
+}
+
+.logo {
+    background-image: url(../img/logo.svg);
+    background-size: cover;
+    
+    width: 200px;
+    height: 156px;
+    display: block;
+    margin: 60px auto 20px;
+}
+
+.icon-apple {
+    background-image: url(../img/apple.svg);
+    background-size: cover;
+    
+    width: 20px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.icon-android {
+    background-image: url(../img/android.svg);
+    background-size: cover;
+    
+    width: 20px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.index-title {
+    @extend .font-regular;
+    
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    
+    @media screen and (max-width: 959px) {
+        font-size: 18px;
+    }
+    
+    big {
+        @extend .font-bold;
+        
+        font-size: 2em;
+        display: block;
+        margin: 2px 0;
+    }
+    
+    strong {
+        @extend .font-bold;
+    }
+}
+
+.index-parag {
+    @extend .font-regular;
+    
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    
+    @media screen and (max-width: 959px) {
+        font-size: 14px;
+    }
+    
+    strong {
+        @extend .font-bold;
+    }
+}
+
+.btn-action {
+    @include border-radius(15px);
+    @include box-shadow(0 5px 3px 0 rgba(0,0,0,0.1));
+    @extend .font-bold;
+    
+    background: rgba(0,0,0,0.5);
+    border: 2px solid white;
+    font-size: 22px;
+    color: white;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    &:hover {
+         @include box-shadow(0 10px 15px 0 rgba(0,0,0,0.2));
+        
+        transform: scale(1.05);
+    }
+}
+
+.mobile {
+    background-image: url(../img/iphone.svg);
+    background-size: cover;
+    
+    width: 270px;
+    height: 543px;
+    display: inline-block;
+    margin: 50px auto;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 40px;
+    
+    &__screen {
+        position: absolute;
+        top: 67px;
+        left: 18px;
+        
+        background: red;
+        width: 234px;
+        height: 413px;
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.call {
+    @extend .font-regular;
+    
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin: 60px auto 0;
+}
