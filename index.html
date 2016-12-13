@@ -31,6 +31,20 @@
 		ga('send', 'pageview');
 
 	</script>
+	<script>
+/**
+* Função que acompanha um clique em um link externo no Analytics.
+* Essa função processa uma string de URL válida como um argumento e usa essa string de URL
+* como o rótulo do evento. Ao definir o método de transporte como 'beacon', o hit é enviado
+* usando 'navigator.sendBeacon' em um navegador compatível.
+*/
+var trackOutboundLink = function(url) {
+	ga('send', 'event', 'outbound', 'click', url, {
+		'transport': 'beacon',
+		'hitCallback': function(){document.location = url;}
+	});
+}
+</script>
 </head>
 <body class="bkg">
 	<span class="logo"></span>
@@ -48,8 +62,8 @@
 		Cerveja GELADA na sua casa por </br>um preço acessível. </br></br>
 		<strong>É só pedir pelo aplicativo.</strong>
 
-		<a href="https://play.google.com/store/apps/details?id=com.cerveja.me" target="_blank" class="btn-action"><span class="icon-android"></span> GOOGLE PLAY </a>
-		<a href="https://itunes.apple.com/us/app/cerveja.me/id1181205425" class="btn-action"><span class="icon-apple"></span>APP STORE</a>
+		<a href="https://play.google.com/store/apps/details?id=com.cerveja.me" onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=com.cerveja.me')" target="_blank" class="btn-action"><span class="icon-android"></span> GOOGLE PLAY </a>
+		<a href="https://itunes.apple.com/us/app/cerveja.me/id1181205425" onclick="trackOutboundLink('https://itunes.apple.com/us/app/cerveja.me/id1181205425')" class="btn-action"><span class="icon-apple"></span>APP STORE</a>
 	</p>
 
 </body>
