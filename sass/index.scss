@@ -96,6 +96,9 @@
     display: block;
     cursor: pointer;
     transition: all 0.3s;
+    text-decoration: none;
+    text-align: center;
+    width: 230px;
     
     &:hover {
          @include box-shadow(0 10px 15px 0 rgba(0,0,0,0.2));
