@@ -46,6 +46,14 @@ var trackOutboundLink = function(url) {
 	});
 }
 </script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=289767478086559";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </head>
 <body class="bkg">
 	<span class="logo"></span>
@@ -59,12 +67,14 @@ var trackOutboundLink = function(url) {
 		</figure>
 	</div>
 
+
 	<p class="index-parag">
 		Cerveja GELADA na sua casa por </br>um preço acessível. </br></br>
 		<strong>É só pedir pelo aplicativo.</strong>
-
+		
 		<a href="https://play.google.com/store/apps/details?id=com.cerveja.me" onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=com.cerveja.me')" target="_blank" class="btn-action"><span class="icon-android"></span> GOOGLE PLAY </a>
 		<a href="https://itunes.apple.com/us/app/cerveja.me/id1181205425" onclick="trackOutboundLink('https://itunes.apple.com/us/app/cerveja.me/id1181205425')" class="btn-action"><span class="icon-apple"></span>APP STORE</a>
+		<!-- <div class="fb-like" data-href="https://www.facebook.com/app.cerveja.me" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div> -->
 	</p>
 
 </body>
