@@ -17,6 +17,10 @@ header {
     background: #583318;
     margin: 0;
     padding-bottom: 80px;
+    
+    @media screen and (max-width: 959px) {
+        padding-bottom: 50px;
+    }
 }
 
 .menu-home {
@@ -24,6 +28,7 @@ header {
     margin: 0 25px;
     border-bottom: 1px solid white;
     position: relative;
+    height: 74px;
     
     &__link {
         @extend .font-regular;
@@ -37,6 +42,11 @@ header {
         
         &:hover {
             color: #D5A86C;
+        }
+        
+         
+        @media screen and (max-width: 959px) {
+            display: none;
         }
     }
 }
@@ -59,6 +69,12 @@ header {
     height: 152px;
     display: block;
     margin: 60px auto;
+    
+    @media screen and (max-width: 959px) {
+        width: 148px;
+        height: 129px;
+        margin: 40px auto;
+    }
 }
 
 .menu-download {
@@ -81,6 +97,15 @@ header {
         cursor: pointer;
         transition: all 0.2s;
         display: inline-block;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        @media screen and (max-width: 959px) {
+            width: 45%;
+            font-size: 12px;
+        }
         
         label {
             cursor: pointer;
@@ -189,6 +214,11 @@ header {
     vertical-align: middle;
     margin-left: 150px;
     
+    @media screen and (max-width: 959px) {
+        margin-left: auto;
+    }
+    
+    
     &__screen {
         position: absolute;
         top: 67px;
@@ -251,12 +281,21 @@ header {
     height: 530px;
     position: relative;
     margin: 0 auto;
+    
+    @media screen and (max-width: 959px) {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .flow {
     position: absolute;
     top: 170px;
     right: 5%;
+    
+    @media screen and (max-width: 959px) {
+        display: none;
+    }
     
     &__step {
         @include border-radius(100%);
@@ -305,14 +344,32 @@ header {
         width: 576px;
         height: 591px;
         top: -289px;
-        right: 15%;
+        right: 8%;
         position: absolute;
+         
+        @media screen and (max-width: 959px) {
+            width: 509px;
+            height: 520px;
+            top: -220px;
+            right: -15%;
+        }
     }
     
     h2 {
         width: 960px;
         margin: 0 auto;
         padding: 110px;
+          
+        @media screen and (max-width: 959px) {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 12;
+            background: #D84040;
+            position: relative;
+            font-size: 22px;
+        }
     }
 }
 
@@ -346,6 +403,19 @@ h2 {
 footer {
     text-align: center;
     padding: 70px 0;
+    
+    @media screen and (max-width: 959px) {
+        padding: 40px 0;
+    }
+
+    p {
+        @extend .font-regular;
+        
+        color: #583318;
+        text-align: center;
+        font-size: 14px;
+        margin: 30px auto;
+    }
 }
 
 .logo-dark {
@@ -356,4 +426,15 @@ footer {
     height: 113px;
     display: inline-block;
     margin-bottom: 30px;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    
+    @media screen and (max-width: 959px) {
+        width: 100%;
+    }
+
 }
