@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
     <Say voice="alice">.</Say>
-    <Play>https://demo.twilio.com/docs/message.mp3</Play>
+    <Play>https://s3-sa-east-1.amazonaws.com/cerveja.me/img/mobile/message.mp3</Play>
 </Response>
