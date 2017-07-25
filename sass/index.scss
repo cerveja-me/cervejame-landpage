@@ -14,7 +14,7 @@ label {
 header {
     width: 100%;
     text-align: left;
-    background: #583318;
+    background-color: #583318;
     margin: 0;
     padding-bottom: 80px;
     
@@ -26,7 +26,6 @@ header {
 .menu-home {
     display: block;
     margin: 0 25px;
-    border-bottom: 1px solid white;
     position: relative;
     height: 74px;
     
@@ -43,8 +42,7 @@ header {
         &:hover {
             color: #D5A86C;
         }
-        
-         
+
         @media screen and (max-width: 959px) {
             display: none;
         }
@@ -68,7 +66,7 @@ header {
     width: 178px;
     height: 152px;
     display: block;
-    margin: 60px auto;
+    margin: 10px auto 60px;
     
     @media screen and (max-width: 959px) {
         width: 148px;
@@ -113,7 +111,7 @@ header {
         }
         
         &:hover {
-            
+
         }
     }
 }
@@ -196,10 +194,10 @@ header {
     width: 230px;
     
     &:hover {
-         @include box-shadow(0 10px 15px 0 rgba(0,0,0,0.2));
-        
-        transform: scale(1.05);
-    }
+       @include box-shadow(0 10px 15px 0 rgba(0,0,0,0.2));
+
+       transform: scale(1.05);
+   }
 }
 
 .mobile {
@@ -337,16 +335,14 @@ header {
     overflow: hidden;
     position: relative;
     
-    .map {
-        background-image: url(../img/map.svg);
-        background-size: cover;
-    
-        width: 576px;
+    iframe {
+
+        width: 100%;
         height: 591px;
-        top: -289px;
-        right: 8%;
-        position: absolute;
-         
+        // top: -289px;
+        // right: 8%;
+        // position: absolute;
+
         @media screen and (max-width: 959px) {
             width: 509px;
             height: 520px;
@@ -359,7 +355,7 @@ header {
         width: 960px;
         margin: 0 auto;
         padding: 110px;
-          
+
         @media screen and (max-width: 959px) {
             width: 100%;
             margin: 0 auto;
@@ -398,6 +394,11 @@ h2 {
     color: white;
     padding: 10px 30px;
     display: inline-block;
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.04);
+    }
 }
 
 footer {
@@ -414,7 +415,7 @@ footer {
         color: #583318;
         text-align: center;
         font-size: 14px;
-        margin: 30px auto;
+        margin: 30px auto 0;
     }
 }
 

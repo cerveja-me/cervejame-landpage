@@ -1,0 +1,114 @@
+@import '_mixins';
+
+.bkg-red {
+	background: #D84040;
+}
+
+.partner-title {
+	@extend .font-regular;
+
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	padding: 10px 0 70px;
+
+	@media screen and (max-width: 959px) {
+		font-size: 18px;
+	}
+
+	strong {
+		@extend .font-bold;
+	}
+}
+
+.sc-benefits {
+	padding: 70px 0;
+}
+
+.benefits {
+	
+
+	&__item {
+		box-sizing: border-box;
+		width: 30%;
+		margin: 0 4% 0 0;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 1%;
+
+		&:last-of-type {
+
+			margin-right: 0;
+		}
+
+		h2 {
+			@extend .font-bold;
+
+			color: #D84040;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			@extend .font-regular;
+
+			color: #583318;
+			font-size: 16px;
+		}
+	}
+}
+
+.sc-questions {
+	background: #583318;
+	padding: 70px 0;
+}
+
+.question {
+
+	&__item {
+		box-sizing: border-box;
+		width: 47%;
+		margin: 0 4% 50px 0;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 1%;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+
+		h2 {
+			@extend .font-bold;
+
+			color: white;
+			font-size: 20px;
+			margin-bottom: 20px;
+			text-transform: none;
+		}
+
+		p {
+			@extend .font-regular;
+
+			color: white;
+			font-size: 16px;
+		}
+	}
+}
+
+footer {
+	text-align: center;
+	padding: 70px 0;
+
+	@media screen and (max-width: 959px) {
+		padding: 40px 0;
+	}
+
+	p {
+		@extend .font-regular;
+
+		color: #583318;
+		text-align: center;
+		font-size: 14px;
+		margin: 30px auto 0;
+	}
+}
