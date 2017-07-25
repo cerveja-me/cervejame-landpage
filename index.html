@@ -35,7 +35,20 @@
 		ga('send', 'pageview');
 
 	</script>
-	<script>
+	<style>
+      /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+      #map {
+      	height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+      	height: 100%;
+      	margin: 0;
+      	padding: 0;
+      }
+  </style>
+  <script>
 /**
 * Função que acompanha um clique em um link externo no Analytics.
 * Essa função processa uma string de URL válida como um argumento e usa essa string de URL
@@ -117,7 +130,247 @@ var trackOutboundLink = function(url) {
 <section class="sc-cities">
 
 	<!-- <h2>Cidades Atendidas</h2> -->
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15518253.561275264!2d-60.65329849651608!3d-18.27249508091691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sbr!4v1500935030038"  frameborder="0" style="border:0" allowfullscreen></iframe>
+	<div id="map"></div>
+	<script>
+		function initMap() {
+			var uluru = {lat: -20.469800,lng: -54.620095};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 4,
+				center: uluru,
+				styles:[
+				{
+					"elementType": "geometry",
+					"stylers": [
+					{
+						"color": "#f5f5f5"
+					}
+					]
+				},
+				{
+					"elementType": "labels.icon",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				},
+				{
+					"elementType": "labels.text.fill",
+					"stylers": [
+					{
+						"color": "#616161"
+					}
+					]
+				},
+				{
+					"elementType": "labels.text.stroke",
+					"stylers": [
+					{
+						"color": "#f5f5f5"
+					}
+					]
+				},
+				{
+					"featureType": "administrative",
+					"elementType": "geometry",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.country",
+					"elementType": "geometry.fill",
+					"stylers": [
+					{
+						"color": "#ff000c"
+					},
+					{
+						"visibility": "on"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.country",
+					"elementType": "geometry.stroke",
+					"stylers": [
+					{
+						"color": "#d04537"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.country",
+					"elementType": "labels.text",
+					"stylers": [
+					{
+						"color": "#ffffff"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.country",
+					"elementType": "labels.text.stroke",
+					"stylers": [
+					{
+						"color": "#ff000c"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.locality",
+					"stylers": [
+					{
+						"visibility": "on"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.locality",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					{
+						"color": "#ffffff"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.locality",
+					"elementType": "labels.text.stroke",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.province",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.province",
+					"elementType": "geometry.stroke",
+					"stylers": [
+					{
+						"color": "#d04537"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.province",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					{
+						"color": "#ffffff"
+					}
+					]
+				},
+				{
+					"featureType": "administrative.province",
+					"elementType": "labels.text.stroke",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				},
+				{
+					"featureType": "landscape",
+					"elementType": "geometry.fill",
+					"stylers": [
+					{
+						"color": "#dd6b68"
+					}
+					]
+				},
+				{
+					"featureType": "poi.park",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				},
+				{
+					"featureType": "road",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				},
+				{
+					"featureType": "road",
+					"elementType": "labels.icon",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				},
+				{
+					"featureType": "transit",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "geometry.fill",
+					"stylers": [
+					{
+						"color": "#d4433c"
+					}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					{
+						"visibility": "off"
+					}
+					]
+				}
+				]
+			});
+			var icons = {
+				active: {
+					icon: 'img/pin.svg'
+				}
+			};
+			var features = [
+			{
+				position: new google.maps.LatLng(-20.469800,-54.620095),
+				description:'Campo Grande - MS',
+				type: 'active'
+			},
+			{
+				position: new google.maps.LatLng(-25.099025, -50.157842),
+				description:'Ponta Grossa - PR',
+				type: 'active'
+			}
+			];
+
+        // Create markers.
+        features.forEach(function(feature) {
+        	var marker = new google.maps.Marker({
+        		position: feature.position,
+        		icon: icons[feature.type].icon,
+        		map: map
+        	});
+        });
+    }
+</script>
+<script async defer	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKiUVVFdR0OlfrR34QtKu9sBf-oyYuiGs&callback=initMap">
+</script>
 
 </section>
 
