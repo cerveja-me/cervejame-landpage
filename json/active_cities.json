@@ -1,0 +1,283 @@
+[
+	
+	{
+		"position": {"lat":-23.550551,"lng":-46.633350},
+		"description":"São Paulo - SP",
+		"population":"11.316.149",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-22.917345, "lng":-43.404257},
+		"description":"Rio de Janeiro - RJ",
+		"population":"6.316.149",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-12.973781, "lng":-38.502546},
+		"description":"Salvador - BA",
+		"population":"2.616.149",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-15.777891, "lng":-47.892242},
+		"description":"Brasilia - BA",
+		"population":"2.616.149",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-3.740304, "lng":-38.529230},
+		"description":"Fortaleza - CE",
+		"population":"2.616.149",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-19.917197, "lng":-43.934425},
+		"description":"Belo Horizonte - MG",
+		"population":"2.616.149",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-3.130665, "lng":-60.020244},
+		"description":"Manaus - AM",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-25.430169, "lng":-49.267531},
+		"description":"Curitiba - PR",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-8.059962, "lng":-34.915946},
+		"description":"Recife - PE",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-30.068396, "lng":-51.178288},
+		"description":"Porto Alegre - RS",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-1.450165, "lng":-48.489752},
+		"description":"Belém - PA",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-16.676320, "lng":-49.270031},
+		"description":"Goiânia - GO",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-26.997305,"lng": -48.629687},
+		"description":"Balneário Camboriú - SC",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-26.312961,"lng": -48.846657},
+		"description":"Joinville - SC",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-27.617319,"lng": -48.495609},
+		"description":"Florianópolis - SC",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-29.689711,"lng": -53.817788},
+		"description":"Santa Maria - RS",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-25.512122,"lng": -54.582244},
+		"description":"Foz do Iguaçu - PR",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-21.173855,"lng": -47.814262},
+		"description":"Ribeirão Preto - SP",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-22.509809, "lng": -55.720707},
+		"description":"Ponta Porã - MS",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-22.564319,  "lng": -55.749388},
+		"description":"Pedro Juan Caballero, Paraguai",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-21.094128, "lng": -45.564446},
+		"description":"Boa Esperança - MG",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-22.786065, "lng": -43.305298},
+		"description":"Duque de Caxias - RJ",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-22.229861, "lng": -54.804129},
+		"description":"Dourados - MS",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -10.947940, "lng":-37.074213},
+		"description":"Aracaju - SE",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -20.349977,"lng": -40.294210},
+		"description":"Vila Velha - ES",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -22.381506,"lng": -54.512482},
+		"description":"Fátima do Sul - MS",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -23.183435,"lng":-50.645465},
+		"description":"Cornélio Procópio - PR",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-7.228501,"lng": -35.881762 },
+		"description":"Campina Grande - PB",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -23.796627,"lng": -46.554539},
+		"description":"São Bernardo do Campo - SP",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-22.120996,"lng":-51.407389 },
+		"description":"Presidente Prudente - SP",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-23.418402,"lng": -51.958947 },
+		"description":"Maringá - PR",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-23.191338,"lng": -45.876757 },
+		"description":"São José dos Campos",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -22.910367,"lng":-47.062276},
+		"description":"Campinas - SP",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-20.350445,"lng": -43.614842 },
+		"description":"Ouro Preto - MG",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -27.094045,"lng": -52.615593},
+		"description":"Chapecó - SC",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -24.954417, "lng":-53.465831},
+		"description":"Cascavel - PR",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -23.764169, "lng":-53.302232},
+		"description":"Umuarama - PR",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -15.601500,"lng": -56.085412},
+		"description":"Cuiabá - MT",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-15.556113,"lng": -54.300172 },
+		"description":"Primavera do Leste - MT",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-11.859844,"lng": -55.503335 },
+		"description":"Sinop - MT",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-16.463880,"lng": -54.639577 },
+		"description":"Rondonópolis - MT",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-10.249884,"lng": -48.334487},
+		"description":"Palmas - TO",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-23.454923,"lng": -46.533730 },
+		"description":"Guarulhos - SP",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -2.548626,"lng": -44.261215},
+		"description":"São Luís - MA",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat": -9.649649,"lng": -35.709047},
+		"description":"Maceió - AL",
+		"population":"",
+		"type": "potential"
+	},
+	{
+		"position": {"lat":-25.099420,"lng":-50.158316},
+		"description":"Ponta Grossa - PR",
+		"type": "active"
+	},
+	{
+		"position": {"lat":-20.469800,"lng":-54.620095},
+		"description":"Campo Grande - MS",
+		"type": "active"
+	}
+] 

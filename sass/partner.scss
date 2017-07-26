@@ -10,23 +10,29 @@
 	font-size: 40px;
 	color: white;
 	text-align: center;
-	padding: 10px 0 70px;
+	padding: 10px 0 40px;
 
 	@media screen and (max-width: 959px) {
-		font-size: 18px;
+		font-size: 25px;
+		padding: 0 15px;
 	}
 
 	strong {
 		@extend .font-bold;
+
+		color: #D5A86C;
 	}
 }
 
 .sc-benefits {
 	padding: 70px 0;
+
+	@media screen and (max-width: 959px) {
+		padding: 20px 0;
+	}
 }
 
 .benefits {
-	
 
 	&__item {
 		box-sizing: border-box;
@@ -35,6 +41,12 @@
 		display: inline-block;
 		vertical-align: top;
 		padding: 0 1%;
+
+		@media screen and (max-width: 959px) {
+			width: 100%;
+			margin: 0;
+			padding: 10%;
+		}
 
 		&:last-of-type {
 
@@ -63,7 +75,23 @@
 	padding: 70px 0;
 }
 
+.sc-cities {
+	height: 400px;
+}
+
 .question {
+
+	h1 {
+		@extend .font-regular;
+
+		color: white;
+		margin-bottom: 50px;
+		font-size: 30px;
+
+		@media screen and (max-width: 959px) {
+			text-align: center;
+		}
+	}
 
 	&__item {
 		box-sizing: border-box;
@@ -71,7 +99,13 @@
 		margin: 0 4% 50px 0;
 		display: inline-block;
 		vertical-align: top;
-		padding: 0 1%;
+		padding: 0 1% 0 0;
+
+		@media screen and (max-width: 959px) {
+			width: 100%;
+			margin: 0;
+			padding: 10%;
+		}
 
 		&:last-of-type {
 			margin-right: 0;
@@ -80,9 +114,9 @@
 		h2 {
 			@extend .font-bold;
 
-			color: white;
+			color: #D5A86C;
 			font-size: 20px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			text-transform: none;
 		}
 
