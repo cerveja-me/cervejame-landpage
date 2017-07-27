@@ -146,3 +146,41 @@ footer {
 		margin: 30px auto 0;
 	}
 }
+
+
+.button-whats {
+    @extend .font-bold;
+    @include border-radius(50px);
+    
+    border: 2px solid #7cdc8a;
+    background: #7cdc8a;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #583318;
+    padding: 10px 30px;
+    display: inline-block;
+    transition: all 0.2s;
+    margin: 0 15px 0 0;
+
+    &:hover {
+        transform: scale(1.04);
+    }
+
+
+	@media screen and (max-width: 959px) {
+		margin: 0 0 15px 0;
+		width: 100%;
+		box-sizing: border-box; 
+	}
+}
+
+.icon-whats {
+    background-image: url(../../img/whats.svg);
+    background-size: cover;
+    
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
