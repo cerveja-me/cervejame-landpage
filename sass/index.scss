@@ -17,7 +17,7 @@ header {
     background-color: #583318;
     margin: 0;
     padding-bottom: 80px;
-    
+
     @media screen and (max-width: 959px) {
         padding-bottom: 50px;
     }
@@ -28,17 +28,17 @@ header {
     margin: 0 25px;
     position: relative;
     height: 74px;
-    
+
     &__link {
         @extend .font-regular;
-        
+
         color: white;
         padding: 25px 0;
         margin-right: 30px;
         font-size: 18px;
         display: inline-block;
         transition: all 0.1s;
-        
+
         &:hover {
             color: #D5A86C;
         }
@@ -67,12 +67,12 @@ header {
 .logo {
     background-image: url(../img/logo.svg);
     background-size: cover;
-    
+
     width: 178px;
     height: 152px;
     display: block;
     margin: 30px auto 60px;
-    
+
     @media screen and (max-width: 959px) {
         width: 148px;
         height: 129px;
@@ -84,47 +84,89 @@ header {
     background: #D84040;
     padding: 15px;
     text-align: center;
-    
+    font-size: 0;
+
     &__button {
         @extend .font-bold;
         @include border-radius(10px);
-        
+
         background: white;
         border: 2px solid #583318;
-        font-size: 22px;
+        font-size: 18px;
         color: #583318;
         text-transform: uppercase;
         padding: 15px 0;
-        width: 215px;
+        width: 190px;
         margin-right: 15px;
         cursor: pointer;
         transition: all 0.2s;
         display: inline-block;
-        
+
+        &.messenger {
+          color: #0084ff;
+          border-color: #0084ff;
+          background: white;
+          width: 300px;
+
+          @media screen and (max-width: 959px) {
+              width: 49%;
+          }
+
+          span {
+            margin-right: 5px;
+          }
+
+          label {
+            @media screen and (max-width: 959px) {
+                display: inline-block;
+            }
+          }
+        }
+
         &:last-child {
             margin-right: 0;
         }
-        
+
         @media screen and (max-width: 959px) {
-            width: 45%;
+            width: 20%;
             font-size: 12px;
+            margin-right: 3%;
+
+            span {
+              margin-right: 0;
+            }
         }
-        
+
         label {
             cursor: pointer;
             margin-top: 3px;
+
+            @media screen and (max-width: 959px) {
+                display: none;
+            }
         }
-        
+
         &:hover {
 
         }
     }
 }
 
+.icon-messenger {
+    background-image: url(../img/icon-messenger.svg);
+    background-size: cover;
+
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
 .icon-apple {
     background-image: url(../img/icon-apple.svg);
     background-size: cover;
-    
+
     width: 22px;
     height: 27px;
     display: inline-block;
@@ -135,7 +177,7 @@ header {
 .icon-android {
     background-image: url(../img/icon-android.svg);
     background-size: cover;
-    
+
     width: 22px;
     height: 27px;
     display: inline-block;
@@ -145,36 +187,36 @@ header {
 
 .index-title {
     @extend .font-regular;
-    
+
     font-size: 40px;
     color: white;
     text-align: center;
-    
+
     @media screen and (max-width: 959px) {
         font-size: 25px;
         padding: 0 15px;
     }
-    
+
     strong {
         @extend .font-bold;
-        
+
         color: #D5A86C;
     }
 }
 
 .index-parag {
     @extend .font-regular;
-    
+
     font-size: 18px;
     color: white;
     text-align: left;
     display: inline-block;
     vertical-align: middle;
-    
+
     @media screen and (max-width: 959px) {
         font-size: 14px;
     }
-    
+
     strong {
         @extend .font-bold;
     }
@@ -184,7 +226,7 @@ header {
     @include border-radius(15px);
     @include box-shadow(0 5px 3px 0 rgba(0,0,0,0.1));
     @extend .font-bold;
-    
+
     background: rgba(0,0,0,0.5);
     border: 2px solid white;
     font-size: 22px;
@@ -198,7 +240,7 @@ header {
     text-decoration: none;
     text-align: center;
     width: 230px;
-    
+
     &:hover {
        @include box-shadow(0 10px 15px 0 rgba(0,0,0,0.2));
 
@@ -209,7 +251,7 @@ header {
 .mobile {
     background-image: url(../img/iphone.svg);
     background-size: cover;
-    
+
     width: 270px;
     height: 543px;
     display: inline-block;
@@ -217,21 +259,21 @@ header {
     position: relative;
     vertical-align: middle;
     margin-left: 150px;
-    
+
     @media screen and (max-width: 959px) {
         margin-left: auto;
     }
-    
-    
+
+
     &__screen {
         position: absolute;
         top: 67px;
         left: 18px;
-        
+
         background: red;
         width: 234px;
         height: 413px;
-        
+
         img {
             width: 100%;
             height: 100%;
@@ -241,7 +283,7 @@ header {
 
 .call {
     @extend .font-regular;
-    
+
     font-size: 18px;
     color: white;
     text-align: center;
@@ -251,7 +293,7 @@ header {
 .icon-fb {
     background-image: url(../img/icon-fb.svg);
     background-size: cover;
-    
+
     width: 29px;
     height: 29px;
     display: inline-block;
@@ -262,7 +304,7 @@ header {
 .icon-tt {
     background-image: url(../img/icon-tt.svg);
     background-size: cover;
-    
+
     width: 29px;
     height: 29px;
     display: inline-block;
@@ -272,7 +314,7 @@ header {
 .icon-instagram {
     background-image: url(../img/icon-instagram.svg);
     background-size: cover;
-    
+
     width: 29px;
     height: 29px;
     display: inline-block;
@@ -286,7 +328,7 @@ header {
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    
+
     @media screen and (max-width: 959px) {
         width: 100%;
         text-align: center;
@@ -297,14 +339,14 @@ header {
     position: absolute;
     top: 170px;
     right: 5%;
-    
+
     @media screen and (max-width: 959px) {
         display: none;
     }
-    
+
     &__step {
         @include border-radius(100%);
-        
+
         display: inline-block;
         width: 34px;
         height: 34px;
@@ -312,7 +354,7 @@ header {
         vertical-align: middle;
         position: relative;
         margin-right: 10px;
-        
+
         &:after {
             content: "";
             height: 25px;
@@ -322,14 +364,14 @@ header {
             left: 16px;
         }
     }
-    
+
     &__item:last-child &__step:after {
         display: none;
     }
-    
+
     &__item {
         @extend .font-bold;
-        
+
         color: #D84040;
         font-size: 25px;
         margin-bottom: 25px;
@@ -341,7 +383,7 @@ header {
     height: 400px;
     overflow: hidden;
     position: relative;
-    
+
     iframe {
 
         width: 100%;
@@ -357,7 +399,7 @@ header {
             right: -15%;
         }
     }
-    
+
     h2 {
         width: 960px;
         margin: 0 auto;
@@ -388,7 +430,7 @@ header {
 
     &__item {
         @extend .font-bold;
-        
+
         padding: 15px 20px;
         font-size: 16px;
         color: #583318;
@@ -402,7 +444,7 @@ header {
 
 h2 {
     @extend .font-bold;
-    
+
     font-size: 25px;
     text-transform: uppercase;
     color: white;
@@ -428,7 +470,7 @@ nav {
 .button-euquero {
     @extend .font-bold;
     @include border-radius(50px);
-    
+
     border: 2px solid white;
     background: #D84040;
     font-size: 22px;
@@ -451,14 +493,14 @@ nav {
 footer {
     text-align: center;
     padding: 70px 0;
-    
+
     @media screen and (max-width: 959px) {
         padding: 40px 0;
     }
 
     p {
         @extend .font-regular;
-        
+
         color: #583318;
         text-align: center;
         font-size: 14px;
@@ -469,7 +511,7 @@ footer {
 .logo-dark {
     background-image: url(../img/logo-dark.svg);
     background-size: cover;
-    
+
     width: 132px;
     height: 115px;
     display: inline-block;
@@ -480,7 +522,7 @@ footer {
     width: 960px;
     margin: 0 auto;
     position: relative;
-    
+
     @media screen and (max-width: 959px) {
         width: 100%;
     }
@@ -490,7 +532,7 @@ footer {
 .icon-pin-active {
     background-image: url(../img/pin-active.svg);
     background-size: cover;
-    
+
     width: 24px;
     height: 27px;
     display: inline-block;
@@ -501,7 +543,7 @@ footer {
 .icon-potential {
     background-image: url(../img/potential.svg);
     background-size: cover;
-    
+
     width: 24px;
     height: 27px;
     display: inline-block;
