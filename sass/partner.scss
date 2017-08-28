@@ -1,7 +1,16 @@
 @import '_mixins';
 
-.bkg-red {
-	background: #D84040;
+header {
+    width: 100%;
+    text-align: left;
+    background-color: #583318;
+    margin: 0;
+    padding: 30px 0 0;
+    position: relative;
+
+    @media screen and (max-width: 959px) {
+        padding-bottom: 50px;
+    }
 }
 
 .partner-title {
@@ -10,7 +19,8 @@
 	font-size: 40px;
 	color: white;
 	text-align: center;
-	padding: 10px 0 40px;
+	padding: 10px 0 0;
+	margin-bottom: 30px;
 
 	@media screen and (max-width: 959px) {
 		font-size: 25px;
@@ -19,8 +29,44 @@
 
 	strong {
 		@extend .font-bold;
-
 		color: #D5A86C;
+	}
+}
+
+.partner-subtitle {
+	@extend .font-regular;
+
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	padding: 10px 0 40px;
+
+	@media screen and (max-width: 959px) {
+		font-size: 14px;
+		padding: 20px 20px 20px;
+	}
+
+	strong {
+		@extend .font-bold;
+	}
+}
+
+.header-partner {
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+	background-position: top center;
+
+	@media screen and (max-width: 959px) {
+			padding: 40px 0 20px;
+	}
+
+	.menu-home {
+		&__link {
+			&:hover {
+				color: #D5A86C;
+				border-color: #D5A86C;
+			}
+		}
 	}
 }
 
@@ -85,11 +131,12 @@
 		@extend .font-regular;
 
 		color: white;
-		margin-bottom: 50px;
-		font-size: 30px;
+		margin-bottom: 80px;
+		font-size: 38px;
 
 		@media screen and (max-width: 959px) {
-			text-align: center;
+			margin-bottom: 40px;
+			padding-left: 30px;
 		}
 	}
 
@@ -147,40 +194,50 @@ footer {
 	}
 }
 
-
 .button-whats {
-    @extend .font-bold;
+    @extend .font-regular;
     @include border-radius(50px);
-    
-    border: 2px solid #7cdc8a;
-    background: #7cdc8a;
-    font-size: 22px;
+
+    border: 2px solid white;
+    font-size: 18px;
     text-transform: uppercase;
-    color: #583318;
+    color: white;
     padding: 10px 30px;
     display: inline-block;
     transition: all 0.2s;
-    margin: 0 15px 0 0;
+    margin: 0 0 0 25px;
 
     &:hover {
-        transform: scale(1.04);
+			background: rgba(255,255,255,0.1);
     }
 
-
 	@media screen and (max-width: 959px) {
-		margin: 0 0 15px 0;
+		margin: 15px 0 0 0;
 		width: 100%;
-		box-sizing: border-box; 
+		box-sizing: border-box;
 	}
 }
 
 .icon-whats {
-    background-image: url(../../img/whats.svg);
+    background-image: url(../img/whats.svg);
     background-size: cover;
-    
     width: 24px;
     height: 24px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 15px;
+}
+
+.sc-buttons {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#583318+0,583318+100&0+0,1+65,1+100 */
+background: -moz-linear-gradient(top, rgba(88,51,24,0) 0%, rgba(88,51,24,1) 65%, rgba(88,51,24,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(88,51,24,0) 0%,rgba(88,51,24,1) 65%,rgba(88,51,24,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(88,51,24,0) 0%,rgba(88,51,24,1) 65%,rgba(88,51,24,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00583318', endColorstr='#583318',GradientType=0 ); /* IE6-9 */
+    padding: 25px 0 40px;
+    text-align: center;
+
+		@media screen and (max-width: 959px) {
+			padding: 25px 15px;
+		}
 }
