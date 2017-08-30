@@ -72,6 +72,9 @@ header {
 
 .sc-benefits {
 	padding: 70px 0;
+  background: #D5A86C;
+  border-bottom: 2px solid #583318;
+  border-top: 2px solid white;
 
 	@media screen and (max-width: 959px) {
 		padding: 20px 0;
@@ -102,15 +105,16 @@ header {
 		h2 {
 			@extend .font-bold;
 
-			color: #D84040;
+
 			font-size: 20px;
 			margin-bottom: 20px;
+      color: #583318;
 		}
 
 		p {
 			@extend .font-regular;
 
-			color: #583318;
+			color: white;
 			font-size: 16px;
 		}
 	}
@@ -240,4 +244,104 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00583318', e
 		@media screen and (max-width: 959px) {
 			padding: 25px 15px;
 		}
+}
+
+.sc-kit {
+  padding: 130px;
+  position: relative;
+  border-bottom: 2px solid #583318;
+
+  @media screen and (max-width: 959px) {
+    padding: 60px 30px;
+  }
+
+  .kit-title {
+      @extend .font-regular;
+
+      font-size: 36px;
+      color: #583318;
+      text-transform: uppercase;
+      display: block;
+
+      @media screen and (max-width: 959px) {
+  			font-size: 20px;
+  		}
+
+      strong {
+          @extend .font-bold;
+      }
+
+    small {
+        @extend .font-regular;
+
+        font-size: 14px;
+        text-transform: none;
+        display: block;
+        margin: 5px 0 50px;
+    }
+  }
+
+  .img-kit {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    top: -55px;
+    right: 0;
+
+    @media screen and (max-width: 959px) {
+			position: relative;
+      top: 0;
+      right: auto;
+      margin: 0px 0 50px;
+      width: 100%;
+		}
+  }
+
+  .kit-items {
+
+      @media screen and (max-width: 959px) {
+
+      }
+
+      &__step {
+          @include border-radius(100%);
+
+          display: inline-block;
+          width: 26px;
+          height: 26px;
+          border: 3px solid #583318;
+          vertical-align: middle;
+          position: relative;
+          margin-right: 20px;
+
+          @media screen and (max-width: 959px) {
+            width:15px;
+            height: 15px;
+            margin-right: 5px;
+          }
+      }
+
+      &__item:last-of-type {
+          margin-bottom: 0;
+      }
+
+      &__item {
+          @extend .font-regular;
+
+          color: #583318;
+          font-size: 18px;
+          margin-bottom: 25px;
+
+          strong {
+              @extend .font-bold;
+
+              color: #583318;
+          }
+
+          @media screen and (max-width: 959px) {
+                font-size: 12px;
+          }
+      }
+  }
+
 }
