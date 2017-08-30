@@ -57,7 +57,23 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
   </script>
+	<script type="text/javascript">
+	  (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script");r.type="text/javascript";
+	  r.async=true;r.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.4.1-min.gz.js";
+	  r.onload=function(){if(e.amplitude.runQueuedFunctions){e.amplitude.runQueuedFunctions();
+	  }else{console.log("[Amplitude] Error: could not load SDK")}};var i=t.getElementsByTagName("script")[0];
+	  i.parentNode.insertBefore(r,i);function o(e,t){e.prototype[t]=function(){this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+	  return this}}var s=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset"];
+	  for(var u=0;u<a.length;u++){o(s,a[u])}n.Identify=s;var c=function(){this._q=[];return this;
+	  };var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"];
+	  for(var p=0;p<l.length;p++){o(c,l[p])}n.Revenue=c;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups"];
+	  function v(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+	  }}for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){e=(!e||e.length===0?"$default_instance":e).toLowerCase();
+	  if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]};e.amplitude=n;
+	  })(window,document);
 
+	  amplitude.getInstance().init("b407eec5d7860f21780f096e0f0207d5");
+	</script>
 
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
@@ -113,23 +129,23 @@ var trackOutboundLink = function(url) {
 
         <a href="#" class="menu-home__link">Cidades Atendidas
         </a>-->
-        <a class="menu-home__link" href="./" data-mode="1">O que fazemos
+        <a class="menu-home__link" href="./" data-mode="1" onClick="amplitude.getInstance().logEvent('BUTTON_PARTNER_MENU_OQUEFAZEMOS');">O que fazemos
         </a>
 
-        <a class="menu-home__link" href="https://cervejame.typeform.com/to/HYBeZG" data-mode="1" target="_blank">Fale conosco
+        <a class="menu-home__link" href="https://cervejame.typeform.com/to/HYBeZG" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_PARTNER_MENU_FALE_CONOSCO');" >Fale conosco
         </a>
 
     </nav>
 
     <nav class="social">
 
-    	<a target="_blank" href="http://facebook.com/app.cerveja.me" class="icon-fb">
+    	<a target="_blank" href="http://facebook.com/app.cerveja.me" class="icon-fb" onClick="amplitude.getInstance().logEvent('BUTTON_PARTNER_FACEBOOK');">
     	</a>
 
-    	<a target="_blank" href="http://instagram.com/cerveja.me" class="icon-instagram">
+    	<a target="_blank" href="http://instagram.com/cerveja.me" class="icon-instagram" onClick="amplitude.getInstance().logEvent('BUTTON_PARTNER_INSTAGRAM');">
     	</a>
 
-    	<a target="_blank" href="http://twitter.com/cervejameapp" class="icon-tt">
+    	<a target="_blank" href="http://twitter.com/cervejameapp" class="icon-tt" onClick="amplitude.getInstance().logEvent('BUTTON_PARTNER_TWITTER');">
     	</a>
 
     </nav>
@@ -147,9 +163,9 @@ var trackOutboundLink = function(url) {
 		<section class="sc-buttons">
 			<!-- <a href="mailto:euquero@cerveja.me" class="button-euquero">Seja um vendedor</a> -->
 
-			<a class="typeform-share button-euquero" href="https://cervejame.typeform.com/to/wg9U44" data-mode="1" target="_blank">Quero me candidatar</a>
+			<a class="typeform-share button-euquero" href="https://cervejame.typeform.com/to/wg9U44" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_PARTNER_QUEROMECANDIDATAR');" >Quero me candidatar</a>
 			<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-			<a class="button-whats" href="https://api.whatsapp.com/send?phone=5511999483309"><i class="icon-whats"></i>Tire sua dúvidas</a>
+			<a class="button-whats" href="https://api.whatsapp.com/send?phone=5511999483309" onClick="amplitude.getInstance().logEvent('BUTTON_PARTNER_TIREDUVIDAS');"><i class="icon-whats"></i>Tire sua dúvidas</a>
 
 		</section>
 
@@ -387,9 +403,9 @@ function initMap() {
 </section>
 
 <section class="sc-euquero">
-	<a class="typeform-share button-euquero" href="https://cervejame.typeform.com/to/wg9U44" data-mode="1" target="_blank">Quero me candidatar</a>
+	<a class="typeform-share button-euquero" href="https://cervejame.typeform.com/to/wg9U44" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_PARTNER_EUQUERO_2');">Quero me candidatar</a>
 	<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-	<a class="button-whats" href="https://api.whatsapp.com/send?phone=5511999483309"><i class="icon-whats"></i>Tire sua dúvidas</a>
+	<a class="button-whats" href="https://api.whatsapp.com/send?phone=5511999483309"><i class="icon-whats" onClick="amplitude.getInstance().logEvent('BUTTON_PARTNER_TIREDUVIDAS2');"></i>Tire sua dúvidas</a>
 
 </section>
 

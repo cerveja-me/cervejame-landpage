@@ -35,6 +35,23 @@
 		ga('send', 'pageview');
 
 	</script>
+	<script type="text/javascript">
+		(function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script");r.type="text/javascript";
+		r.async=true;r.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-3.4.1-min.gz.js";
+		r.onload=function(){if(e.amplitude.runQueuedFunctions){e.amplitude.runQueuedFunctions();
+		}else{console.log("[Amplitude] Error: could not load SDK")}};var i=t.getElementsByTagName("script")[0];
+		i.parentNode.insertBefore(r,i);function o(e,t){e.prototype[t]=function(){this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+		return this}}var s=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset"];
+		for(var u=0;u<a.length;u++){o(s,a[u])}n.Identify=s;var c=function(){this._q=[];return this;
+		};var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"];
+		for(var p=0;p<l.length;p++){o(c,l[p])}n.Revenue=c;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups"];
+		function v(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)));
+		}}for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){e=(!e||e.length===0?"$default_instance":e).toLowerCase();
+		if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]};e.amplitude=n;
+		})(window,document);
+
+		amplitude.getInstance().init("b407eec5d7860f21780f096e0f0207d5");
+	</script>
 	<style>
       /* Always set the map height explicitly to define the size of the div
       * element that contains the map. */
@@ -82,16 +99,16 @@ var trackOutboundLink = function(url) {
 <body class="bkg">
 	<header>
 		<nav class="menu-home">
-			<a class="button-euquero" href="./partner" data-mode="1" target="_blank">Seja um vendedor</a>
-			<a href="#cities" class="menu-home__link">Cidades Atendidas</a>
-			<a class="typeform-share menu-home__link" href="https://cervejame.typeform.com/to/HYBeZG" data-mode="1" target="_blank">Fale conosco</a>
+			<a class="button-euquero" href="./partner" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_SEJAUMVENDEDOR');">Seja um vendedor</a>
+			<a href="#cities" class="menu-home__link" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_CIDADES');">Cidades Atendidas</a>
+			<a class="typeform-share menu-home__link" href="https://cervejame.typeform.com/to/HYBeZG" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_FALECONOSCO');">Fale conosco</a>
 
 		</nav>
 
 		<nav class="social">
-			<a target="_blank" href="http://facebook.com/app.cerveja.me" class="icon-fb"></a>
-			<a target="_blank" href="http://instagram.com/cerveja.me" class="icon-instagram"></a>
-			<a target="_blank" href="http://twitter.com/cervejameapp" class="icon-tt"></a>
+			<a target="_blank" href="http://facebook.com/app.cerveja.me" class="icon-fb" onClick="amplitude.getInstance().logEvent('BUTTON_FACEBOOK');"></a>
+			<a target="_blank" href="http://instagram.com/cerveja.me" class="icon-instagram"onClick="amplitude.getInstance().logEvent('BUTTON_INSTAGRAM');"></a>
+			<a target="_blank" href="http://twitter.com/cervejameapp" class="icon-tt" onClick="amplitude.getInstance().logEvent('BUTTON_TWITTER');"></a>
 		</nav>
 		<span class="logo"></span>
 		<h1 class="home-title">
@@ -105,15 +122,15 @@ var trackOutboundLink = function(url) {
 	<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
 
 	<nav class="menu-download">
-		<a href="http://m.me/app.cerveja.me" target="_blank" class="menu-download__button messenger">
+		<a href="http://m.me/app.cerveja.me" target="_blank" class="menu-download__button messenger" onClick="amplitude.getInstance().logEvent('BUTTON_MESSENGER')">
 			<span class="icon-messenger"></span>
 			<label>Peça Agora</label>
 		</a>
-		<a href="https://play.google.com/store/apps/details?id=com.cerveja.me" target="_blank" class="menu-download__button">
+		<a href="https://play.google.com/store/apps/details?id=com.cerveja.me" target="_blank" class="menu-download__button" onClick="amplitude.getInstance().logEvent('BUTTON_PLAYSTORE')">
 			<span class="icon-android"></span>
 			<label>Android</label>
 		</a>
-		<a href="https://itunes.apple.com/br/app/cervejame/id1218916319" target="_blank" class="menu-download__button">
+		<a href="https://itunes.apple.com/br/app/cervejame/id1218916319" target="_blank" class="menu-download__button" onClick="amplitude.getInstance().logEvent('BUTTON_ITUNES')">
 			<span class="icon-apple"></span>
 			<label>Iphone</label>
 		</a>
