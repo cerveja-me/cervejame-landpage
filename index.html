@@ -258,5 +258,22 @@ function initMap() {
 	})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "664641090369432", // Facebook page ID
+            company_logo_url: "//scontent.xx.fbcdn.net/v/t1.0-1/p50x50/17800315_768459113320962_8846741853042501648_n.png?oh=d160e27eb340544f80565b705919395d&oe=5A6B5763", // URL of company logo (png, jpg, gif)
+            greeting_message: "Aproveite e peça agora por aqui", // Text of greeting message
+            call_to_action: "Pedi pelo facebook", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
 </body>
 </html>
