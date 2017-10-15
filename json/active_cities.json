@@ -1,5 +1,5 @@
 [
-	
+
 	{
 		"position": {"lat":-23.550551,"lng":-46.633350},
 		"description":"São Paulo - SP",
@@ -20,7 +20,7 @@
 	},
 	{
 		"position": {"lat":-15.777891, "lng":-47.892242},
-		"description":"Brasilia - BA",
+		"description":"Brasilia - DF",
 		"population":"2.616.149",
 		"type": "potential"
 	},
@@ -280,4 +280,4 @@
 		"description":"Campo Grande - MS",
 		"type": "active"
 	}
-] 
+]
