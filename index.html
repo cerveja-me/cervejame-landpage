@@ -100,7 +100,7 @@ var trackOutboundLink = function(url) {
 <body class="bkg">
 	<header>
 		<nav class="menu-home">
-			<a class="button-euquero" href="./partner" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_SEJAUMVENDEDOR');">Seja um parceiro</a>
+			<a class="button-euquero" href="./mini-franquia" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_SEJAUMVENDEDOR');">Seja um parceiro</a>
 			<!-- <a href="#cities" class="menu-home__link" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_CIDADES');">Cidades Atendidas</a> -->
 			<a class="typeform-share menu-home__link" href="https://cervejame.typeform.com/to/HYBeZG" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_FALECONOSCO');">Fale conosco</a>
 			<a href="./blog" class="menu-home__link"  data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_BLOG');">Blog</a>
@@ -140,8 +140,15 @@ Thatiana</span>
 
 		<a href="http://m.me/app.cerveja.me" target="_blank" class="menu-download__button messenger" onClick="amplitude.getInstance().logEvent('BUTTON_MESSENGER')">
 			<span class="icon-messenger"></span>
-			<label>Peça pelo messenger</label>
+			<label>Pedir Cerveja</label>
 		</a>
+
+		<a href="./app" target="_blank" class="menu-download__button" onClick="amplitude.getInstance().logEvent('BUTTON_PLAYSTORE')">
+			<span class="icon-android"></span>
+			<span class="icon-apple"></span>
+			<label>Baixar App</label>
+		</a>
+
 
 	</header>
 	<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
@@ -150,22 +157,19 @@ Thatiana</span>
 
 		<ul class="flow">
 			<li class="flow__item">
+				<h2>Aplicativo para pedir cerveja gelada</h2>
+				<p>A melhor experiência de entrega de cerveja. Do aplicativo à entrega.</p>
+			</li>
+			<li class="flow__item">
 				<h2>Cerveja gelada nos melhores horários</h2>
-				<p>Entrega de cerveja gelada para a hora certa da sede</p>
+				<p>Entrega de cerveja gelada nos melhores horários de atendimento.</p>
 			</li>
 			<li class="flow__item">
 				<h2>Entrega de cerveja gelada
  onde estiver</h2>
-				<p>Cerveja gelada na sua casa ou na porta da balada, baseado na sua localização</p>
+				<p>Cerveja gelada na sua casa ou na porta da balada, baseado na sua localização.</p>
 			</li>
-			<a href="https://play.google.com/store/apps/details?id=com.cerveja.me" target="_blank" class="menu-download__button" onClick="amplitude.getInstance().logEvent('BUTTON_PLAYSTORE')">
-				<span class="icon-android"></span>
-				<label>Android</label>
-			</a>
-			<a href="https://itunes.apple.com/br/app/cervejame/id1218916319" target="_blank" class="menu-download__button" onClick="amplitude.getInstance().logEvent('BUTTON_ITUNES')">
-				<span class="icon-apple"></span>
-				<label>Iphone</label>
-			</a>
+
 		</ul>
 
 		<div class="mobile">
@@ -266,7 +270,7 @@ function initMap() {
 
 	</ul>
 	<!-- <a href="mailto:euquero@cerveja.me" class="button-euquero">Seja um vendedor</a> -->
-	<!-- <a class="button-euquero" href="./partner" data-mode="1" target="_blank">Seja um Parceiro</a>
+	<!-- <a class="button-euquero" href="./mini-franquia" data-mode="1" target="_blank">Seja um Parceiro</a>
 	<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script> -->
 
 </section>
@@ -286,7 +290,7 @@ function initMap() {
 			<strong>Franquia</strong>
 		</h2>
 		<p>Mini franquia já é uma tendência forte no franchising brasileiro. O formato enxuto e investimento de uma mini franquia é acessível e chamam a atenção. Elas vem permitindo com que empreendedores com pouco capital possam atuar em um negócio estruturado, com marca e know how para operação e gestão do negócio e mais importante.</p>
-		<a class="button-euquero" href="./partner" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_SEJAUMVENDEDOR');">Seja um parceiro</a>
+		<a class="button-euquero" href="./mini-franquia" data-mode="1" target="_blank" onClick="amplitude.getInstance().logEvent('BUTTON_MENU_SEJAUMVENDEDOR');">Seja um parceiro</a>
 
 	</article>
 

@@ -18,6 +18,9 @@ header {
   	background-size: cover;
   	background-position: top center;
     position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 430px;
 
     &:after {
       @include border-radius(50%);
@@ -35,6 +38,7 @@ header {
 
     	@media screen and (max-width: 959px) {
     			padding: 40px 0 40px;
+          height: 472px;
     	}
 }
 
@@ -47,8 +51,8 @@ header {
 	padding: 10px 0 0;
 
 	@media screen and (max-width: 959px) {
-		font-size: 25px;
-		padding: 0 15px;
+		font-size: 30px;
+		padding: 0 30px;
 	}
 
 	small {
@@ -139,8 +143,8 @@ header {
     margin: 20px auto 30px;
 
     @media screen and (max-width: 959px) {
-        width: 148px;
-        height: 129px;
+        width: 129px;
+        height: 111px;
         margin: 40px auto;
     }
 }
@@ -182,6 +186,7 @@ header {
   top: 140px;
   z-index: 5;
   border: 2px solid #583318;
+  text-align: left;
 
   @media screen and (max-width: 959px) {
     display: none;
@@ -240,39 +245,34 @@ header {
 
     &__button {
         @extend .font-bold;
-        @include border-radius(10px);
+        @include border-radius(100px);
 
         background: white;
         border: 2px solid #583318;
         font-size: 18px;
         color: #583318;
         text-transform: uppercase;
-        padding: 15px 0;
-        width: 178px;
-        margin-right: 15px;
+        padding: 16px 35px;
+        margin-right: 20px;
         cursor: pointer;
         transition: all 0.2s;
         display: inline-block;
         text-align: center;
+        margin-top: 40px;
+        transform: scale(1);
+
+        &:hover {
+          transform: scale(1.03);
+        }
 
         &.messenger {
-          @include border-radius(100px);
-
           color: #0084ff;
           border-color: #0084ff;
           background: white;
           text-align: center;
           text-transform: uppercase;
           font-size: 22px;
-          padding: 15px 20px;
-          width: 400px;
-          margin: 40px auto !important;
-          display: block;
-
-          @media screen and (max-width: 959px) {
-              width: 75%;
-              font-size: 14px;
-          }
+          padding: 15px 35px;
 
           span {
             margin-right: 5px;
@@ -283,6 +283,11 @@ header {
                 display: inline-block;
             }
           }
+
+          @media screen and (max-width: 959px) {
+              font-size: 16px;
+              margin-top: 40px;
+          }
         }
 
         &:last-child {
@@ -290,13 +295,11 @@ header {
         }
 
         @media screen and (max-width: 959px) {
-            width: 45%;
-            font-size: 12px;
-            margin-right: 3%;
-
-            span {
-              margin-right: 0;
-            }
+            width: 57%;
+            font-size: 16px;
+            margin-right: 0;
+            margin-top: 15px;
+            padding: 15px 20px;
         }
 
         label {
@@ -415,7 +418,7 @@ header {
     height: 744px;
     /* margin: 50px auto; */
     position: absolute;
-    top: -180px;
+    top: -90px;
     left: -100px;
     z-index: 4;
 
@@ -472,7 +475,7 @@ header {
 
 .sc-flow {
     width: 960px;
-    height: 564px;
+    height: 654px;
     position: relative;
     margin: 0 auto;
 
@@ -520,10 +523,12 @@ text-align: center;
     display: inline-block;
     margin-right: 6%;
     vertical-align: middle;
-    // opacity: 0.5;
-    transition: all .3s;
+    transition: all .2s;
+    opacity: 0.6;
+    transform: scale(0.95);
 
     img {
+
         @media screen and (max-width: 959px) {
           height: 40px;
           width: auto;
@@ -533,6 +538,7 @@ text-align: center;
 
     &:hover {
       opacity: 1;
+      transform: scale(1);
     }
 
     &:last-of-type {
